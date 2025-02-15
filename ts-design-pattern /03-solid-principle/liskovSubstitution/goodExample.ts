@@ -1,52 +1,51 @@
-export {}
+// export {}
 
-interface Shape {
-    getArea(): number;
-}
+// interface Shape {
+//     getArea(): number;
+// }
 
-class Rectangle implements Shape {
-    private width = 0;
-    private height = 0;
+// class Rectangle implements Shape {
+//     private width = 0;
+//     private height = 0;
 
-    setWidth(width: number) {
-        this.width = width;
-    }
+//     setWidth(width: number) {
+//         this.width = width;
+//     }
 
+//     setHeight(height: number) {
+//         this.height = height;
+//     }
 
-    setHeight(height: number) {
-        this.height = height;
-    }
+//     getArea(): number {
+//         return this.width * this.height;
+//     }
+// }
 
-    getArea(): number {
-        return this.width * this.height;
-    }
-}
+// class Square implements Shape {
+//     private length = 0;
 
-class Square implements Shape {
-    private length = 0;
+//     setLength(length: number) {
+//         this.length = length;
+//     }
 
-    setLength(length: number) {
-        this.length = length;
-    }
+//     getArea(): number {
+//         return this.length * this.length;
+//     }
+// }
 
-    getArea(): number {
-        return this.length * this.length;
-    }
-}
+// function f(shape: Shape) {
+//     console.log(shape.getArea());
+// }
 
-function f(shape: Shape) {
-    console.log(shape.getArea());
-}
+// function run() {
+//     const r1 = new Rectangle();
+//     r1.setWidth(3);
+//     r1.setHeight(4);
+//     f(r1);
 
-function run() {
-    const r1 = new Rectangle();
-    r1.setWidth(3);
-    r1.setHeight(4);
-    f(r1);
+//     const r2 = new Square();
+//     r2.setLength(3);
+//     f(r2);
+// }
 
-    const r2 = new Square();
-    r2.setLength(3);
-    f(r2);
-}
-
-run();
+// run();

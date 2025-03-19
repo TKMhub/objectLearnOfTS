@@ -53,3 +53,18 @@ class WaitingRoomIterator implements IIterator {
     return patient;
   }
 }
+
+function run() {
+  const waitingRoom = new WaitingRoom();
+  waitingRoom.checkIn(new Patient(1, "AAA"));
+  waitingRoom.checkIn(new Patient(2, "BBB"));
+  waitingRoom.checkIn(new Patient(3, "CCC"));
+
+  const iterator = waitingRoom.getIterator();
+  console.log(iterator.next());
+  console.log(iterator.next());
+  console.log(iterator.next());
+  console.log(iterator.next());
+}
+
+run();
